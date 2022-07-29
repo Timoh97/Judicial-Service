@@ -1,15 +1,23 @@
 {% extends "base.html" %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 {% block content%}
-<body>
-    <h2 class="text-center bg-success">hellllllllllllllloooooooooo</h2>
+<body class="container">
+    
+
+
+
+    <div class="ml-3" style="background-color: grey;" >
+        <h2 class="text-center">LAW AND ATTORNEY</h2>
+        <img class="rounded-circle" src="https://cdn.dribbble.com/users/3951046/screenshots/7364878/media/3e73a479288d7990041b1241e0d34c66.jpg?compress=1&resize=400x300&vertical=top" alt="">
+    </div>
 </body>
 {% endblock %}
 </html>
