@@ -90,7 +90,7 @@ class NeighbourHood(models.Model):
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, default=1)
     name = models.CharField(max_length=50)
-    service_number= models.IntegerField(max_length=10)
+    service_number= models.IntegerField(unique=True)
     email = models.EmailField(max_length=100, blank=True, null=True)
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     neighbourhood = models.ForeignKey(NeighbourHood, on_delete=models.CASCADE)

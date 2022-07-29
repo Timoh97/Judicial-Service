@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +8,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    
 </head>
 {% block content%}
-<body class="container">
+<body class="container" style="margin: 2em;">
+    
+
+    
+        
+<div class="container">
+    <div style="border: solid .3em rgb(14, 14, 58); padding-bottom: 4em; border-radius: .5%;">
+        <h2 style="color: rgb(14, 14, 58);" class="text-center">LAW & FIRMS</h2>
+    <img style="  display: block; margin-left: auto; margin-right: auto; width: 50%;" class="rounded-top-bottom" src="https://cdn.dribbble.com/users/5976/screenshots/14088031/media/80e1b64b62f24440f16c83f6ab496bc7.png?compress=1&resize=768x576&vertical=top" alt="">
+    </div>
+</div>
+        
     
 
 
 
-    <div class="ml-3" style="background-color: grey;" >
-        <h2 class="text-center">LAW AND ATTORNEY</h2>
-        <img class="rounded-circle" src="https://cdn.dribbble.com/users/3951046/screenshots/7364878/media/3e73a479288d7990041b1241e0d34c66.jpg?compress=1&resize=400x300&vertical=top" alt="">
-    </div>
+
 </body>
 {% endblock %}
 </html>
