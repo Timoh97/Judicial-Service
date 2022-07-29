@@ -9,6 +9,9 @@ def index(request):
 def profile(request):
         
     return render(request, 'profile.html')
+def posts(request):
+        
+    return render(request, 'post.html')
 def update_profile(request):
     return render(request,'update_profile.html')
 def create_post(request):
