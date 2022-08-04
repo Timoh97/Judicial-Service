@@ -17,10 +17,7 @@ def update_profile(request):
 def create_post(request):
     return render(request,'profile.html')
 
-def signup (request):
+def authentication (request):
     
-    return render(request, 'signup.html')
+    return render(request, 'registration/authentication.html')
 
-def login(request):
-    
-    return render(request,'login.html')
