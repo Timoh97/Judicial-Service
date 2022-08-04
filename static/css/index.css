@@ -1,3 +1,12 @@
-.p-5{
+.p-5
+{
     background-color: grey;
+
+}
+
+.firm
+{
+    padding: 1em;
+    margin: auto;
+    background-color: aquamarine;
 }
