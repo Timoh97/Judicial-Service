@@ -1,4 +1,13 @@
 {% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
 {% block content %}
 <style>
     *{
@@ -16,7 +25,17 @@
     .profile{
         border: .2em solid #d44b0b;
     }
+    #headerHome{
+        color: #d44b0b;
+    }
+
+    #headerHome:hover{
+        color: white;
+        
+    }
 </style>
+<body>
+<u id="headerHome"><h2 class="text-center">PROFESSIONAL LAWYERS,JUDGES & LEGAL PROCEDURES</h2></u>
 <div class="container">
     <div class="profile" id="">
         <h4 class="text-center">Personal Information</h4>
@@ -86,4 +105,6 @@
       </table>
     </div>
 </div>
+</body>
 {% endblock %}
+</html>
