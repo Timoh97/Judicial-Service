@@ -16,14 +16,16 @@
         
     }
 
-    .container {
+    .box {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: repeat(2, 1fr);
+     grid-template-rows: repeat(3, 1fr);
      grid-gap: .2em;
+     margin: 2em;
     }
     .profile{
         border: .2em solid #d44b0b;
+        border-radius: 1%;
 
     }
     #headerHome{
@@ -40,9 +42,12 @@
         padding: 1em;
         border-collapse: collapse;
     }
+    table{
+        margin: auto;
+    }
 
     @media only screen and (max-width: 500px) {
-.container{
+.box{
     display: flex;
     flex-wrap: wrap;
 }
@@ -54,9 +59,12 @@ display: grid;
 </style>
 <body>
 <u id="headerHome"><h2 class="text-center">PROFESSIONAL LAWYERS,JUDGES & LEGAL PROCEDURES</h2></u>
-<div class="container">
+<div class="box">
     <div class="profile" id="">
-        <h4 class="text-center">Personal Information</h4>
+        <u><h4 class="text-center">Profile Picture</h4></u>
+    </div>
+    <div class="profile" id="">
+        <u><h4 class="text-center">Personal Information</h4></u>
         <table>
         <tr>
           <th>Name</th>
@@ -73,7 +81,7 @@ display: grid;
       </table>
     </div>
     <div class="profile" id="">
-        <h4 class="text-center">Court of Work</h4>
+        <u><h4 class="text-center">Court of Work</h4></u>
         <table>
         <tr>
           <th>Name</th>
@@ -90,7 +98,7 @@ display: grid;
       </table>
     </div>
     <div class="profile" id="">
-        <h4 class="text-center">Department of work</h4>
+        <u><h4 class="text-center">Department of work</h4></u>
         <table>
         <tr>
           <th>Department</th>
@@ -107,7 +115,7 @@ display: grid;
       </table>
     </div>
     <div class="profile" id="">
-        <h4 class="text-center">My Contact Information</h4>
+        <u><h4 class="text-center">My Contact Information</h4></u>
         <table>
         <tr>
           <th>Name</th>
@@ -122,6 +130,22 @@ display: grid;
           <td>........</td>
         </tr>
       </table>
+    </div>
+    <div class="profile" id="">
+        <table>
+            <tr>
+              <th>Name</th>
+              <th>Phone1</th>
+              <th>Phone2</th>
+              <th>Email</th>
+            </tr>
+            <tr>
+              <td>........</td>
+              <td>........</td>
+              <td>........</td>
+              <td>........</td>
+            </tr>
+          </table>
     </div>
 </div>
 </body>
