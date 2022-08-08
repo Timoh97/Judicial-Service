@@ -196,6 +196,7 @@ class Post(models.Model):
         NeighbourHood, on_delete=models.CASCADE, default=1)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    admin_approved = models.BooleanField(default=False)
 
     # create post
     def create_post(self):
