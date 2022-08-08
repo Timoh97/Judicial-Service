@@ -34,16 +34,10 @@
         height: 100%;
         width: fit-content;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto auto auto;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(8,1fr);
         grid-gap: .3em;
-        grid-template-areas: 
-        'a a a a a a a a a a a a'
-        'b b b b b b b b b b b b'
-        'c c c c c c d d d d d d'
-        'e e e e e e f f f f f f'
-        'g g g g g g h h h h h h'
-;
+
 
         padding: 2em;
         
@@ -59,34 +53,38 @@
     }
 
     #practices{
-     grid-area: a;
+        grid-column: 1/-1;
      border-left: .1em dotted white;
      border-right: .1em dotted white;
     }
     #intro{
-    grid-area: b;
-    border-top: .1em dotted white;
+        grid-column: 1/-1;
+    border-top: .1em solid white;
     margin-top: 1em;
     }
 
     #estates{
-     grid-area: c;
+        grid-column: 8/-1;
     }
     #corporate{
-     grid-area: d;
+        grid-column: 8/-1;
     }
     #finance{
-     grid-area: e;
+        grid-column: 8/-1;
     }
     #litigation{
-    grid-area: f;
+        grid-column: 1/6;
+        grid-row: 3/4;
     }
     #antitrust{
-    grid-area: g;
+        grid-column: 1/6;
+        grid-row: 4/5;
     }
 
     #tax{
-    grid-area: h;
+        grid-column: 1/6;
+        grid-row: 5/6;
+        
     }
     #headerHome{
         color: #d44b0b;
@@ -99,7 +97,13 @@
     #headerDiv {
         padding: .3em;
     }
-
+    @media only screen and (max-width: 500px) {
+.col-10 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+}
 </style>
 <body>
     <u id="headerHome"><h2 class="text-center">PROFESSIONAL LAWYERS,JUDGES & LEGAL PROCEDURES</h2></u>
