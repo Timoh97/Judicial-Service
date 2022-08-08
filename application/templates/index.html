@@ -29,28 +29,70 @@
     }
 
     .col-10{
+         
+        margin: auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-gap: .3em;
+        grid-template-areas: 
+        'a a a a a a a a a a a a'
+        'b b b b b b b b b b b b';
+
+        
+    }
+    .home{
         border: .2em solid white;
         border-radius: 1%;
-        margin: auto;
-        height: 80%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em;
     }
-    .home1{
-        border-left: .1em dotted white;
 
+    #practices{
+     grid-area: a;
+    }
+
+    #intro{
+    grid-area: b;
+    }
+
+    #estates{
+     grid-area: ;
+    }
+    #corporate{
+     grid-area: ;
+    }
+    #finance{
+     grid-area: ;
+    }
+    #litigation{
+    grid-area: ;
+    }
+    #antitrust{
+    grid-area: ;
+    }
+
+    #tax{
+    grid-area: ;
     }
 </style>
 <body>
     
     <h2 class="text-center">PROFESSIONAL LAWYERS,JUDGES & LEGAL PROCEDURES</h2>
     <div class="row">
+        
+        
         <div class="col-10">
-            <div class="col-2.5" class="home" id="home1">Hi</div>
-            <div class="col-2.5" class="home">Hi</div>
-            <div class="col-2.5" class="home">Hi</div>
-            <div class="col-2.5" class="home">Hi</div>
+            <div id="practices"><h2  class="text-center">PRACTICES</h2></div>
+            <div id="intro"><p class="text-center h3">We provide services on different <br>legal issues and in different fields of Law </p></div>
+            <div  class="home" id="estates"><u><h2>REAL ESTATE</h2></u></div>
+            <div  class="home" id="corporate"><u><h2 class="text-center">CORPORATE</h2></u></div>
+            <div  class="home" id="finance"><u><h2 class="text-center">FINANCE</h2></u></div>
+            <div  class="home" id="litigation"><u><h2 class="text-center">LITIGATION</h2></u></div>
+            <div  class="home" id="antitrust"><u><h2 class="text-center">ANTITRUST</h2></u></div>
+            <div  class="home" id="tax"><u><h2 class="text-center">TAX</h2></u></div>
             
         </div>
 
