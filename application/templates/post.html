@@ -8,18 +8,227 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 </head>
 
 {% block content%}
+<style>
+ul {
+  list-style-type: none;
+  margin-left:37%;
+padding:0;
+}
+
+.rating{
+  margin-left:37%;
+}
+
+.page{
+  background-color:#dfe6e0;
+padding:2%;
+margin: auto;
+}
+
+.fa{
+  color:#f2dd1d;
+}
+
+.card-img-top{
+width:90%;
+height:225px;
+}
+
+.view{
+  background-color:#dfe6e0;
+  padding:10px;
+  margin:20px;
+}
+
+.card{
+  width:95%;
+  padding:0px;
+  margin-left: 2%;
+}
+
+.card-footer{
+  background-color: #ff772e;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.date{
+color:#d44b0b;
+  font-weight: 600;
+
+}
+</style>
 <body>
-    <div class="col-12">
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
-    </div>
+
+
+<!--For Page-->
+<div class="page">
+
+	<!--For Row containing all card-->
+	<div class="row">
+
+
+
+		<!--Card 1-->
+		<div class="col-sm">
+			<div class="card card-cascade card-ecommerce wider shadow mb-5 ">
+
+				<!--Card image-->
+				<div class="view view-cascade overlay text-center">
+					<img class="card-img-top" src="https://i.imgur.com/9VZGPJF.jpg"
+      alt="" >
+					<a>
+						<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
+
+
+				<!--Card Body-->
+				<div class="card-body card-body-cascade text-center">
+
+					<!--Card Title-->
+					<h4 class="card-title"><strong><a href="">Title: </a></strong></h4>
+
+					<!-- Card Description-->
+					<p class="card-text">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere rerum vitae explicabo cupiditate! Pariatur, natus eaque. Magni veniam aperiam voluptatem voluptate optio atque vero delectus non, laborum nulla? Corrupti.
+					</p>
+
+
+					<p class="date">Date posted:</p>
+
+					<!-- Card Rating-->
+					<ul class="row rating">
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+					</ul>
+
+
+					<!--Card footer-->
+					<div class="card-footer">
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!--Card 2-->
+		<div class="col-sm">
+			<div class="card card-cascade card-ecommerce wider shadow mb-5 ">
+
+				<!--Card image-->
+				<div class="view view-cascade overlay text-center">
+					<img class="card-img-top" src="https://i.imgur.com/Fc9aj6m.jpg"
+      alt="">
+					<a>
+						<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
+
+				<!--Card Body-->
+				<div class="card-body card-body-cascade text-center">
+
+					<!--Card Title-->
+					<h4 class="card-title"><strong><a href="">Title:</a></strong></h4>
+
+					<!--Card Description-->
+					<p class="card-text">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus delectus voluptatibus amet doloribus explicabo nobis eius, molestiae iure harum reprehenderit praesentium accusantium voluptatem officia nisi aspernatur in magnam quas!
+					</p>
+
+					<p class="date">Date posted:</p>
+
+					<!-- Card Rating-->
+					<ul class="row rating">
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+					</ul>
+
+					<!--Card footer-->
+					<div class="card-footer">
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!--Card 2-->
+		<div class="col-sm">
+			<div class="card card-cascade card-ecommerce wider shadow mb-5 ">
+
+				<!--Card image-->
+				<div class="view view-cascade overlay text-center">
+					<img class="card-img-top" src="https://i.imgur.com/FDdJ4Xm.jpg"
+      alt="">
+					<a>
+						<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
+
+				<!--Card Body-->
+				<div class="card-body card-body-cascade text-center">
+
+					<!--Card Title-->
+					<h4 class="card-title"><strong><a href="">Title:</a></strong></h4>
+
+					<!--Description-->
+					<p class="card-text">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam soluta aspernatur pariatur vero consequuntur. Ullam delectus iste incidunt perferendis esse id a consequatur, quibusdam veniam ad. Facere eveniet eum dolorum.
+					</p>
+
+					<p class="date">Date posted:</p>
+
+					<!-- Card Rating-->
+					<ul class="row rating">
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+					</ul>
+
+
+					<!--Card footer-->
+					<div class="card-footer">
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
 </body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 {% endblock%}
 </html>
