@@ -24,6 +24,7 @@
     }
     .profile{
         border: .2em solid #d44b0b;
+
     }
     #headerHome{
         color: #d44b0b;
@@ -33,6 +34,23 @@
         color: white;
         
     }
+
+    th, td {
+        border: .2em solid black;
+        padding: 1em;
+        border-collapse: collapse;
+    }
+
+    @media only screen and (max-width: 500px) {
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile{
+display: grid;
+}
+}
 </style>
 <body>
 <u id="headerHome"><h2 class="text-center">PROFESSIONAL LAWYERS,JUDGES & LEGAL PROCEDURES</h2></u>
@@ -75,8 +93,8 @@
         <h4 class="text-center">Department of work</h4>
         <table>
         <tr>
-          <th>Department Name</th>
-          <th>Number of staff</th>
+          <th>Department</th>
+          <th>staff count</th>
           <th>Court</th>
           <th>........</th>
         </tr>
