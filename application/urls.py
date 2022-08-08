@@ -13,5 +13,5 @@ path('client/', views.client, name='client'),
 path('contact/', views.contact, name='contact'),
 path('about/', views.about, name='about'),
 path("post/save/", views.create_post, name="save_post"),
-path('signup/', views.authentication, name='authentication'),
+path('authentication/', views.authentication, name='authentication'),
 ]

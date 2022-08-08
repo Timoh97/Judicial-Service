@@ -91,12 +91,14 @@ Built by: [Timothy Mugendi](https://github.com/Timoh97)
 
 ## Support and contact details
 Incase of any issues at hand, please email me at timohmugendi@gmail.com
-## Preview
+## Preview of the web pages
  <img src="./screenshots/1.png" alt="screenshot" />
 
   <img src="./screenshots/2.png" alt="screenshot" />
 
   <img src="./screenshots/3.png" alt="screenshot" />
+
+  <img src="./screenshots/4.png" alt="screenshot" />
 
 ### License
 <a href=''>MIT LICENSE</a>
