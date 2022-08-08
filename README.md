@@ -56,17 +56,12 @@ Built by: [Timothy Mugendi](https://github.com/Timoh97)
 ```
 * Run migrations
 ```bash
-      $ 
+      $ python manage.py makemigrations application
 ```
 ```bash
-      $ 
+      $ python manage.py migrate application
       
       (each time the database models change repeat the migrate and upgrade commands.)
-```
-```bash
-      $   
-      
-      (to see all commands )
 ```
 ### Running the Application
 * To run the application, open the cloned repo in terminal and run the following commands:
@@ -91,7 +86,7 @@ Built by: [Timothy Mugendi](https://github.com/Timoh97)
 
 
 ## Support and contact details
-Incase of any issues at hand, please email me at timohmugendi@gmail.com
+Incase of any issues at hand, please email me at timohmugendi@gmail.com or call me via +254791417147
 ## Preview of the web pages
  <img src="./screenshots/1.png" alt="screenshot" />
 
