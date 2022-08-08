@@ -8,15 +8,82 @@
     }
 
     .container {
-        
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     grid-gap: .2em;
+    }
+    .profile{
+        border: .2em solid #d44b0b;
     }
 </style>
 <div class="container">
-    <div class="profile" id="">1</div>
-    <div class="profile" id="">2</div>
-    <div class="profile" id="">3</div>
-    <div class="profile" id="">4</div>
-    <div class="profile" id="">5</div>
-    <div class="profile" id="">6</div>
+    <div class="profile" id="">
+        <h4 class="text-center">Personal Information</h4>
+        <table>
+        <tr>
+          <th>Name</th>
+          <th>Service No.</th>
+          <th>Email</th>
+          <th>Home address</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="profile" id="">
+        <h4 class="text-center">Court of Work</h4>
+        <table>
+        <tr>
+          <th>Name</th>
+          <th>Superiority</th>
+          <th>Location</th>
+          <th>.......</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="profile" id="">
+        <h4 class="text-center">Department of work</h4>
+        <table>
+        <tr>
+          <th>Department Name</th>
+          <th>Number of staff</th>
+          <th>Court</th>
+          <th>........</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="profile" id="">
+        <h4 class="text-center">My Contact Information</h4>
+        <table>
+        <tr>
+          <th>Name</th>
+          <th>Phone1</th>
+          <th>Phone2</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+          <td>Germany</td>
+        </tr>
+      </table>
+    </div>
 </div>
 {% endblock %}

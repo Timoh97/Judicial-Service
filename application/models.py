@@ -90,6 +90,7 @@ class NeighbourHood(models.Model):
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, default=1)
     name = models.CharField(max_length=50)
+    home_address = models.CharField(max_length=50,default='home address')
     service_number= models.IntegerField(unique=True)
     email = models.EmailField(max_length=100, blank=True, null=True)
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
@@ -147,7 +148,8 @@ class Business(models.Model):
 class Contact(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField(max_length=50, blank=True, null=True)
-    phone = models.CharField(max_length=50)
+    phone1 = models.CharField(max_length=50, default='+254...')
+    phone2 = models.CharField(max_length=50,default='+254...')
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     neighbourhood = models.ForeignKey(
         NeighbourHood, on_delete=models.CASCADE, default=1)
