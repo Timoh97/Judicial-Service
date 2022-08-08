@@ -52,7 +52,7 @@ height:225px;
 }
 
 .card-footer{
-  background-color: #ff772e;
+  background-color: #d44b0b;
   font-weight: 700;
   display: flex;
   flex-direction: row;
@@ -82,8 +82,12 @@ color:#d44b0b;
 
 				<!--Card image-->
 				<div class="view view-cascade overlay text-center">
-					<img class="card-img-top" src="https://i.imgur.com/9VZGPJF.jpg"
-      alt="" >
+          {% if profile.profile_pic %}
+          <img src="{{profile.profile_pic.url}}" alt="" class="card-img-top">
+          {%else%}
+          <img src="data:image/png;base64,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"
+          class="card-img-top" alt="My profile picture">
+      {% endif %}
 					<a>
 						<div class="mask rgba-white-slight"></div>
 					</a>
@@ -135,8 +139,12 @@ color:#d44b0b;
 
 				<!--Card image-->
 				<div class="view view-cascade overlay text-center">
-					<img class="card-img-top" src="https://i.imgur.com/Fc9aj6m.jpg"
-      alt="">
+          {% if profile.profile_pic %}
+          <img src="{{profile.profile_pic.url}}" alt="" class="card-img-top">
+          {%else%}
+          <img src="https://previews.123rf.com/images/puruan/puruan1702/puruan170208997/72742816-judge-avatar-icon-in-doodle-sketch-lines-justice-law-court-trial-decide-guilty.jpg"
+          class="card-img-top" alt="My profile picture">
+      {% endif %}
 					<a>
 						<div class="mask rgba-white-slight"></div>
 					</a>
@@ -183,22 +191,28 @@ color:#d44b0b;
 
 				<!--Card image-->
 				<div class="view view-cascade overlay text-center">
-					<img class="card-img-top" src="https://i.imgur.com/FDdJ4Xm.jpg"
-      alt="">
+          {% if profile.profile_pic %}
+          <img src="{{profile.profile_pic.url}}" alt="" class="card-img-top">
+          {%else%}
+          <img src="https://cdn4.iconfinder.com/data/icons/diversity-v2-0-volume-02/64/judge-jurist-black-female-512.png"
+          class="card-img-top" alt="My profile picture">
+      {% endif %}
 					<a>
 						<div class="mask rgba-white-slight"></div>
 					</a>
 				</div>
 
+
 				<!--Card Body-->
 				<div class="card-body card-body-cascade text-center">
 
 					<!--Card Title-->
-					<h4 class="card-title"><strong><a href="">Title:</a></strong></h4>
+					<h4 class="card-title"><strong><a href="">Title: </a></strong></h4>
 
-					<!--Description-->
-					<p class="card-text">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam soluta aspernatur pariatur vero consequuntur. Ullam delectus iste incidunt perferendis esse id a consequatur, quibusdam veniam ad. Facere eveniet eum dolorum.
+					<!-- Card Description-->
+					<p class="card-text">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere rerum vitae explicabo cupiditate! Pariatur, natus eaque. Magni veniam aperiam voluptatem voluptate optio atque vero delectus non, laborum nulla? Corrupti.
 					</p>
+
 
 					<p class="date">Date posted:</p>
 
@@ -224,7 +238,6 @@ color:#d44b0b;
 				</div>
 			</div>
 		</div>
-
 	</div>
 </div>
 </body>
