@@ -16,7 +16,8 @@ Built by: [Timothy Mugendi](https://github.com/Timoh97)
 * See your profile.
 * Search for different users using their usernames.
 * Message other professionals.
-* Leave a comment on comment box.
+* View posts from staff members,post, update profile, see services offered.
+* Check our clients,their testimonials and our contacts pages.
 
 ## Behaviour Driven Development
 | Behaviour | Input | Output |
@@ -101,5 +102,5 @@ Incase of any issues at hand, please email me at timohmugendi@gmail.com
   <img src="./screenshots/4.png" alt="screenshot" />
 
 ### License
-<a href=''>MIT LICENSE</a>
+<a href='https://github.com/Timoh97/Judicial-Service/blob/master/LICENSE'>MIT LICENSE</a>
  [**TIMOTHY MUGENDI**]
