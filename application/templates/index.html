@@ -38,8 +38,11 @@
         grid-gap: .3em;
         grid-template-areas: 
         'a a a a a a a a a a a a'
-        'b b b b b b b b b b b b';
-
+        'b b b b b b b b b b b b'
+        'c c c c c c d d d d d d'
+        'e e e e e e f f f f f f'
+        'g g g g g g h h h h h h'
+;
         
     }
     .home{
@@ -59,28 +62,36 @@
     }
 
     #estates{
-     grid-area: ;
+     grid-area: c;
     }
     #corporate{
-     grid-area: ;
+     grid-area: d;
     }
     #finance{
-     grid-area: ;
+     grid-area: e;
     }
     #litigation{
-    grid-area: ;
+    grid-area: f;
     }
     #antitrust{
-    grid-area: ;
+    grid-area: g;
     }
 
     #tax{
-    grid-area: ;
+    grid-area: h;
+    }
+    #headerHome{
+        color: #d44b0b;
+    }
+
+    #headerHome:hover{
+        color: white;
+        background-color: #d44b0b;
     }
 </style>
 <body>
     
-    <h2 class="text-center">PROFESSIONAL LAWYERS,JUDGES & LEGAL PROCEDURES</h2>
+    <u id="headerHome"><h2 class="text-center">PROFESSIONAL LAWYERS,JUDGES & LEGAL PROCEDURES</h2></u>
     <div class="row">
         
         
