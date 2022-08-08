@@ -22,6 +22,11 @@
      grid-template-rows: repeat(3, 1fr);
      grid-gap: .2em;
      margin: 2em;
+     grid-template-areas: 
+     'a a a a a a a a a a a a'
+     'b b b b b b b b b b b b'
+     'c c c c c c c c c c c c'
+     'd d d d d d d d d d d d';
     }
     .profile{
         border: .2em solid #d44b0b;
@@ -38,18 +43,42 @@
     }
 
     th, td {
-        border: .2em solid black;
         padding: 1em;
+        border: .2em solid black;
         border-collapse: collapse;
+             
     }
     table{
         margin: auto;
+        border: .2em solid black;
+        border-collapse: collapse;
+    }
+
+    #pic{
+        grid-area: a;
+    }
+    #biodata{
+        grid-area: b;
+    }
+    #court{
+        grid-area: c;
+    }
+    #department{
+        grid-area: d;
+    }
+
+    #contact{
+        grid-area: ;
+    }
+    #personalInfo{
+        grid-area: ;
     }
 
     @media only screen and (max-width: 500px) {
 .box{
     display: flex;
     flex-wrap: wrap;
+    border: hidden;
 }
 
 .profile{
@@ -60,10 +89,10 @@ display: grid;
 <body>
 <u id="headerHome"><h2 class="text-center">PROFESSIONAL LAWYERS,JUDGES & LEGAL PROCEDURES</h2></u>
 <div class="box">
-    <div class="profile" id="">
+    <div class="profile" id="pic">
         <u><h4 class="text-center">Profile Picture</h4></u>
     </div>
-    <div class="profile" id="">
+    <div class="profile" id="biodata">
         <u><h4 class="text-center">Personal Information</h4></u>
         <table>
         <tr>
@@ -80,7 +109,7 @@ display: grid;
         </tr>
       </table>
     </div>
-    <div class="profile" id="">
+    <div class="profile" id="court">
         <u><h4 class="text-center">Court of Work</h4></u>
         <table>
         <tr>
@@ -97,7 +126,7 @@ display: grid;
         </tr>
       </table>
     </div>
-    <div class="profile" id="">
+    <div class="profile" id="department">
         <u><h4 class="text-center">Department of work</h4></u>
         <table>
         <tr>
@@ -114,7 +143,7 @@ display: grid;
         </tr>
       </table>
     </div>
-    <div class="profile" id="">
+    <div class="profile" id="contact">
         <u><h4 class="text-center">My Contact Information</h4></u>
         <table>
         <tr>
@@ -131,7 +160,7 @@ display: grid;
         </tr>
       </table>
     </div>
-    <div class="profile" id="">
+    <div class="profile" id="personalInfo">
         <table>
             <tr>
               <th>Name</th>
