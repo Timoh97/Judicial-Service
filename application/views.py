@@ -20,8 +20,7 @@ def create_post(request):
 def about(request):
     return render(request,'about.html')
 
-def services(request):
-    return render(request,'services.html')
+
 def post(request):
     return render(request,'post.html')
 def client(request):
