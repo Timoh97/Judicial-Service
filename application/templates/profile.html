@@ -43,17 +43,6 @@
         
     }
 
-    th, td {
-        padding: 1em;
-        border: .2em solid black;
-        border-collapse: collapse;
-             
-    }
-    table{
-        margin: auto;
-        border: .2em solid black;
-        border-collapse: collapse;
-    }
 
     #pic{
         grid-column: 1/6;
@@ -76,7 +65,7 @@
         grid-column: 1/-1;
     }
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 370px) {
 .box{
     display: flex;
     flex-wrap: wrap;
@@ -86,99 +75,152 @@
 .profile{
 display: grid;
 }
+
+.box {
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: repeat(6,1fr);
+     grid-gap: .2em;
+     margin: 2em;
+     grid-template-areas: 
+     'a a a a a a a a a a a a'
+     'b b b b b b b b b b b b'
+     'c c c c c c c c c c c c'
+     'd d d d d d d d d d d d'
+     'e e e e e e e e e e e e'
+     'f f f f f f f f f f f f';
+    }
+    #pic{
+grid-area: a;
+    }
+    #biodata{
+grid-area: b;
+    }
+    #court{
+      grid-area: c; 
+    }
+    #department{
+        grid-area: d;
+    }
+
+    #contact{
+        grid-area: e;
+    }
+    #personalInfo{
+        grid-area: f;
+    }
+
 }
+
+@media (min-width: 371px) and (max-width: 780px) {
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    border: hidden;
+}
+
+.profile{
+display: grid;
+}
+
+.box {
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: auto auto auto auto auto;
+     grid-gap: .2em;
+     margin: 2em;
+     /* grid-template-areas: 
+     'b b b b b b b b b b b b'
+     'c c c c c c c c c c c c'
+     'd d d d d d d d d d d d'
+     'e e e e e e e e e e e e'
+     'f f f f f f f f f f f f'; */
+    }
+    #pic{
+        grid-column: 1/7;
+        grid-row: 1/-4;
+    }
+    #biodata{
+        grid-column: 7/-1;
+    }
+    #court{
+        grid-column: 7/-1; 
+    }
+    #department{
+        grid-column: 1/-1;
+    }
+
+    #contact{
+        grid-column: 1/-1;
+    }
+    #personalInfo{
+        grid-column: 1/-1;
+    }
+
+}
+
+.fractions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+  margin: auto;
+}
+
 </style>
 <body>
 <u id="headerHome"><h2 class="text-center">PROFESSIONAL LAWYERS,JUDGES & LEGAL PROCEDURES</h2></u>
 <div class="box">
     <div class="profile" id="pic">
         <u><h4 class="text-center">Profile Picture</h4></u>
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="https://www.w3schools.com/howto/img_avatar.png" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">This is your profile</p>
+            <a href="#" class="btn btn-primary">Update profile</a>
+          </div>
+        </div>
     </div>
     <div class="profile" id="biodata">
         <u><h4 class="text-center">Personal Information</h4></u>
-        <table>
-        <tr>
-          <th>Name</th>
-          <th>Service No.</th>
-          <th>Email</th>
-          <th>Home address</th>
-        </tr>
-        <tr>
-          <td>........</td>
-          <td>........</td>
-          <td>........</td>
-          <td>........</td>
-        </tr>
-      </table>
+<div class="fractions">           <h5>Name</h5>
+  <h5>Service No.</h5>
+  <h5>Email</h5>
+  <h5>Home address</h5></div>
     </div>
     <div class="profile" id="court">
         <u><h4 class="text-center">Court of Work</h4></u>
-        <table>
-        <tr>
-          <th>Name</th>
-          <th>Superiority</th>
-          <th>Location</th>
-          <th>.......</th>
-        </tr>
-        <tr>
-          <td>.......</td>
-          <td>.......</td>
-          <td>.......</td>
-          <td>.......</td>
-        </tr>
-      </table>
+<div class="fractions"><h5>Name</h5>
+  <h5>Superiority</h5>
+  <h5>Location</h5>
+  <h5>......</h5></div>
+
     </div>
     <div class="profile" id="department">
-        <u><h4 class="text-center">Department of work</h4></u>
-        <table>
-        <tr>
-          <th>Department</th>
-          <th>staff count</th>
-          <th>Court</th>
-          <th>........</th>
-        </tr>
-        <tr>
-          <td>.......</td>
-          <td>.......</td>
-          <td>.......</td>
-          <td>.......</td>
-        </tr>
-      </table>
+      <u><h4 class="text-center">Department of work</h4></u>
+<div class="fractions">        
+  <h5>Department</h5>
+  <h5>staff count</h5>
+  <h5>Court</h5>
+  <h5>........</h5>
+  </div>
     </div>
     <div class="profile" id="contact">
-        <u><h4 class="text-center">My Contact Information</h4></u>
-        <table>
-        <tr>
-          <th>Name</th>
-          <th>Phone1</th>
-          <th>Phone2</th>
-          <th>Email</th>
-        </tr>
-        <tr>
-          <td>........</td>
-          <td>........</td>
-          <td>........</td>
-          <td>........</td>
-        </tr>
-      </table>
-    </div>
-    <div class="profile" id="personalInfo">
-        <table>
-            <tr>
-              <th>Name</th>
-              <th>Phone1</th>
-              <th>Phone2</th>
-              <th>Email</th>
-            </tr>
-            <tr>
-              <td>........</td>
-              <td>........</td>
-              <td>........</td>
-              <td>........</td>
-            </tr>
-          </table>
-    </div>
+      <u><h4 class="text-center">My Contact Information</h4></u> 
+<div class="fractions">
+ <h5>Name</h5>
+  <h5>Phone</h5>
+  <h5>Phone2</h5>
+  <h5>Emai</h5></div>
 </div>
+    </div>
+    <!-- <div class="profile" id="personalInfo">
+      <u><h4 class="text-center">My Contact Information</h4></u> 
+
+    </div> -->
 </body>
 {% endblock %}
 </html>

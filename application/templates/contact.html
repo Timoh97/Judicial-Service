@@ -194,20 +194,31 @@ body{
         <p>Talk to us. </p>
       <form action="#">
         <div class="input-box">
-          <input type="text" placeholder="Enter your name">
+          <input type="text" id="name" placeholder="Enter your name">
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Enter your email">
+          <input type="text" id="email" placeholder="Enter your email">
         </div>
         <div class="input-box message-box">
           
         </div>
         <div class="button">
-          <input type="button" value="Send Now" >
+          <input type="button" onclick="MyFunction()" value="Send Now" >
         </div>
       </form>
     </div>
+   
     </div>
   </div>
+  
 </body>
 </html>
+
+<script>
+function MyFunction (){
+   var name=document.getElementById("name").value;
+   var email=document.getElementById("name").value;
+    
+   alert ('We have received your message'+ ' ' + [name])
+}
+</script>
