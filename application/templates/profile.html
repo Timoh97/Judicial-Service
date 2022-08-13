@@ -64,7 +64,19 @@
     #personalInfo{
         grid-column: 1/-1;
     }
+    @media only screen and (max-width: 780px) {
+      .btn {
+        width: 90px;
+        height: 40px;
+        color: #d44b0b;
 
+      }
+
+      .fractions {
+        display: flex;
+        flex-direction: column;
+      }
+    }
     @media only screen and (max-width: 370px) {
 .box{
     display: flex;
@@ -159,11 +171,11 @@ display: grid;
 
 }
 
-.fractions {
+/* .fractions {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
+} */
 
 .card {
   margin: auto;
@@ -175,47 +187,56 @@ display: grid;
 <div class="box">
     <div class="profile" id="pic">
         <u><h4 class="text-center">Profile Picture</h4></u>
-        <div class="card" style="width:300px">
+        <div class="card" style="width:200px">
           <img class="card-img-top" src="https://www.w3schools.com/howto/img_avatar.png" alt="Card image" style="width:100%">
           <div class="card-body">
             <h4 class="card-title">John Doe</h4>
-            <p class="card-text">This is your profile</p>
-            <a href="#" class="btn btn-primary">Update profile</a>
+            <p class="card-text">This is your profile</p>  
+            <a href="#" class="btn btn-outline-dark">Profile</a>
           </div>
         </div>
     </div>
     <div class="profile" id="biodata">
         <u><h4 class="text-center">Personal Information</h4></u>
+        <a href="#" class="btn btn-outline-dark">Update</a>
 <div class="fractions">           <h5>Name</h5>
   <h5>Service No.</h5>
   <h5>Email</h5>
   <h5>Home address</h5></div>
+  
     </div>
     <div class="profile" id="court">
         <u><h4 class="text-center">Court of Work</h4></u>
+        <a href="#" class="btn btn-outline-dark">Update</a>
 <div class="fractions"><h5>Name</h5>
   <h5>Superiority</h5>
   <h5>Location</h5>
   <h5>......</h5></div>
-
+  
     </div>
     <div class="profile" id="department">
       <u><h4 class="text-center">Department of work</h4></u>
+      <a href="#" class="btn btn-outline-dark">Update</a>
 <div class="fractions">        
   <h5>Department</h5>
   <h5>staff count</h5>
   <h5>Court</h5>
   <h5>........</h5>
   </div>
+  
     </div>
     <div class="profile" id="contact">
+      
       <u><h4 class="text-center">My Contact Information</h4></u> 
+      <a href="#" class="btn btn-outline-dark">Update</a>
 <div class="fractions">
  <h5>Name</h5>
   <h5>Phone</h5>
   <h5>Phone2</h5>
   <h5>Emai</h5></div>
+  
 </div>
+
     </div>
     <!-- <div class="profile" id="personalInfo">
       <u><h4 class="text-center">My Contact Information</h4></u> 
